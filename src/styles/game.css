@@ -1,0 +1,104 @@
+div.game {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  max-width: 80%;
+}
+
+div.plane {
+  background: var(--plane-background);
+  width: 80%;
+  height: 3em;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+}
+
+ul.stick {
+  margin: 0;
+  margin-left: 3em;
+  margin-right: 3em;
+  padding: 0;
+  background: var(--stick-background);
+  width: 2em;
+  height: 20em;
+  border-top-left-radius: 3em;
+  border-top-right-radius: 3em;
+}
+
+ul.stick:hover {
+  background: var(--stick-hover-background);
+  cursor: pointer;
+}
+
+li.stack {
+  background: var(--level6-background);
+  text-align: center;
+  height: 2em;
+  border-radius: .8em;
+  opacity: .8;
+}
+
+li.stack:not(.active):hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+li.level-6 {
+  width: 17em;
+  background: var(--level6-background);
+  margin-left: -7.5em;
+}
+
+li.level-5 {
+  width: 14em;
+  background: var(--level5-background);
+  margin-left: -6em;
+}
+
+li.level-4 {
+  width: 11em;
+  background: var(--level4-background);
+  margin-left: -4.5em;
+}
+
+li.level-3 {
+  width: 8em;
+  background: var(--level3-background);
+  margin-left: -3em;
+}
+
+li.level-2 {
+  width: 5em;
+  background: var(--level2-background);
+  margin-left: -1.5em;
+}
+
+li.level-1 {
+  width: 3em;
+  background: var(--level1-background);
+  margin-left: -0.5em;
+}
+
+section.menu article {
+  font-family: MainFont;
+  margin-top: .3em;
+}
+
+section.menu article svg.icon {
+  margin-right: .5em;
+}
+
+article.move span.move-count {
+  color: var(--move-color);
+}
+
+article.move span.move-over {
+  color: var(--move-over-color);
+}
+
+article.restart {
+  cursor: pointer;
+}

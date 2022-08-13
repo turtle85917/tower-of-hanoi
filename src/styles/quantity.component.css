@@ -1,0 +1,13 @@
+article.set-quantity {
+  margin-top: .5em;
+}
+
+article.set-quantity div.title {
+  font-family: MainFont;
+}
+
+article.set-quantity span.current {
+  margin-left: .2em;
+  line-height: .5em;
+  font-family: KyoboHand;
+}
