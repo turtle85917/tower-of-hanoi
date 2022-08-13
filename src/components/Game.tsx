@@ -112,7 +112,7 @@ export default class Game extends Component<{}, S> {
                       const selectStack = Stick.find(st => st.status === "select");
 
                       if (selectStack) {
-                        const underLevel = stick.at(-1)?.level || 7;
+                        const underLevel = stick[0]?.level || 7;
                         if (underLevel < selectStack.level) { // under stack check
                           toast.error((t) => (<Toast content="놓을려고 하는 원반이 아래쪽에 있는 원반보다 커요." toastId={t.id} />), options);
                           return;
@@ -157,7 +157,7 @@ export default class Game extends Component<{}, S> {
                               return;
                             }
 
-                            if (stick.some(s => s.status === "select")) { // Already selected
+                            if (this.state.stacks.find(s => s.find(st => st.status === "select"))) { // Already selected
                               toast.error(t => (<Toast content="선택된 원반이 있습니다." toastId={t.id} />), options);
                               return;
                             }
